@@ -19,18 +19,27 @@ public class MenuSuma {
             switch(opcion) {
                 case 1:
                     try {
-                        System.out.println("El resultado de la suma es: "
-                                + sumarDosEnteros(ingresaEntero(), ingresaEntero()));
+                        System.out.println("El resultado de la suma es: " +
+                                sumarDosEnteros(ingresaEntero(), ingresaEntero()));
                     }catch (ArithmeticException e) {
                         System.out.println(e.getMessage());
                     }
                     break;
                 case 2:
-                    System.out.println("El resultado de la suma es: " + sumarDosReales(ingresaReal(), ingresaReal()));
+                    try {
+                        System.out.println("El resultado de la suma es: " +
+                                sumarDosReales(ingresaReal(), ingresaReal()));
+                    }catch (ArithmeticException e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case 3:
-                    System.out.println("El resultado de la suma es: " +
-                            sumarTresReales(ingresaReal(), ingresaReal(), ingresaReal()));
+                    try {
+                        System.out.println("El resultado de la suma es: " +
+                                sumarTresReales(ingresaReal(), ingresaReal(), ingresaReal()));
+                    }catch (ArithmeticException e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case 4:
                     System.out.println

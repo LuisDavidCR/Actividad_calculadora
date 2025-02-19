@@ -53,10 +53,10 @@ class SumaTest {
                 0.0001, "La suma de -3.5 y 2.4 debe ser -1.1");
 
         //caso5 suma de dos reales supera el maximo admitido lanza una excepcion
-        assertThrows(ArithmeticException.class, () -> suma.sumarDosReales(Double.MAX_VALUE, Double.MAX_VALUE));
+        assertThrows(ArithmeticException.class, () -> suma.sumarDosReales(Double.MAX_VALUE, 1));
 
         //caso suma de dos reales supera el minimo admitido lanza una excepcion
-        assertThrows(ArithmeticException.class, () -> suma.sumarDosReales(-Double.MAX_VALUE, -Double.MAX_VALUE));
+        assertThrows(ArithmeticException.class, () -> suma.sumarDosReales(-Double.MAX_VALUE, -1));
     }
 
     @Test
@@ -68,11 +68,10 @@ class SumaTest {
         assertEquals(-9.9, suma.sumarTresReales(-3.3, -3.3, -3.3), 0.0001);
 
         //caso3 suma de dos reales supera el maximo admitido lanza una excepcion
-        assertThrows(ArithmeticException.class, () -> suma.sumarTresReales(Double.MAX_VALUE, Double.MAX_VALUE, 0.1));
+        assertThrows(ArithmeticException.class, () -> suma.sumarTresReales(Double.MAX_VALUE, 1.1, 0.1));
 
         //caso4 suma de dos reales supera el minimo admitido lanza una excepcion
-        assertThrows(ArithmeticException.class, () -> suma.sumarTresReales
-                (-Double.MAX_VALUE, -Double.MAX_VALUE, -0.1));
+        assertThrows(ArithmeticException.class, () -> suma.sumarTresReales(-1.1, -0.1, -Double.MAX_VALUE));
     }
 
     @Test

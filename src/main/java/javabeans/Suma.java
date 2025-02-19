@@ -27,7 +27,7 @@ public class Suma {
      */
 
     public static int sumarDosEnteros(int a, int b) {
-        if (a + b >= MAX_VALUE || a + b <= MIN_VALUE)
+        if ((a > 0 && b > MAX_VALUE - a) || (a < 0 && b < MIN_VALUE -a))
             throw new ArithmeticException("Supera el valor maximo o minimo admitido");
         return a + b;
     }
@@ -42,7 +42,7 @@ public class Suma {
      */
 
     public static double sumarDosReales(double a, double b) {
-        if (a + b > Double.MAX_VALUE  || a + b < -Double.MAX_VALUE )
+        if ((a > 0 && b > Double.MAX_VALUE - a) || (a < 0 && b < -Double.MAX_VALUE -a ))
             throw new ArithmeticException("Supera el valor maximo o minimo admito");
         return a + b;
     }
@@ -58,9 +58,14 @@ public class Suma {
      */
 
     public static double sumarTresReales(double a, double b, double c) {
-        if (a + b + c > Double.MAX_VALUE || a + b + c < -Double.MAX_VALUE)
+        //verificar primero si supera el limite en a + b.
+        if ((a > 0 && b > Double.MAX_VALUE - a) || (a < 0 && b < -Double.MAX_VALUE -a))
             throw new ArithmeticException("Supera el valor maximo o minimo admito");
-        return a + b + c;
+        double suma1 = a +b;
+        //verificar ahora suma1 + c.
+        if ((c > 0 && suma1 > Double.MAX_VALUE - c) || (c < 0 && suma1 < -Double.MAX_VALUE -c))
+            throw new ArithmeticException("Supera el valor maximo o minimo admito");
+        return suma1 + c;
     }
 
     /**
