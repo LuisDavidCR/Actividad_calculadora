@@ -17,6 +17,7 @@ public class Suma {
         return acumulador;
     }
 
+
     /**
      * Realiza la suma de dos n&uacute;meros enteros.
      *
@@ -69,13 +70,22 @@ public class Suma {
     }
 
     /**
+     * Reinicia la variable acumulador a cero.
+     */
+    public static void  reiniciarAcumulador() {
+        acumulador = 0;
+    }
+
+    /**
      * Suma el valor recivido a la variable acumulador
      * @param a valor a sumar.
      * @return acumulador =+ a.
      */
     public static double sumaAcumulada(double a) {
-        if (a == 0)
-            return acumulador = 0;
+        if (acumulador == 0)
+            return acumulador = a;
+        if ((a > 0 && acumulador > Double.MAX_VALUE - a) || (a < 0 && acumulador < -Double.MAX_VALUE -a))
+            throw new ArithmeticException("Supera el valor maximo o minimo admito");
         return acumulador = acumulador + a;
     }
 
