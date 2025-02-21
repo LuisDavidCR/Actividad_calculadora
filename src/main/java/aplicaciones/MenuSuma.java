@@ -63,12 +63,13 @@ public class MenuSuma {
         System.out.println("2.- Suma dos numeros reales");
         System.out.println("3.- Suma tres numeros reales");
         System.out.println("4.- Suma con valor acumulado");
-        System.out.println("5.- Volver atras\n");
+        System.out.println("5.- Volver atras y reiniciar el acumulador\n");
 
         System.out.println("Teclea una opcion, 5 para volver atras");
 
         opcion = ingresaOpcion();
-
+        if (opcion == 5)    // reinicia el acumulador a 0.
+            reiniciarAcumulador();
         return opcion;
     }
 }
