@@ -5,6 +5,7 @@ import aplicaciones.ScannerGlobal;
 import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
 
+import aplicaciones.Resta;
 /** Clase Main donde se gestiona el menu de la calculadora
  * @author Luis Calzadilla / @LuisDavidCR
  * @version 0.1
@@ -26,13 +27,14 @@ public class Main {
                     menuSuma();
                     break;
                 case 2:
-                    System.out.println("Metodo Resta");
+                    Resta resta = new Resta();
+                    resta.menuResta();
                     break;
                 case 3:
                     System.out.println("Metodo Producto");
                     break;
                 case 4:
-                    System.out.println("Metodo Divición");
+                    System.out.println("Metodo División");
                     break;
             }
 
