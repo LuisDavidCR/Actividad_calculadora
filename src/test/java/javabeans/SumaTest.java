@@ -81,7 +81,7 @@ class SumaTest {
         assertEquals(8.2, suma.sumaAcumulada(3.1), 0.0001, "5.1 + 3.1 = 8.2");
         assertEquals(10.3, suma.sumaAcumulada(2.1), 0.0001, "8.2 + 2.1 = 10.3");
 
-        //caso2 introducir cero y que el aculado vuelva a cero
-        assertEquals(0.0, suma.sumaAcumulada(0), 0.0001);
+        //caso2 suma de dos reales supera el maximo admitido lanza una excepcion
+        assertThrows(ArithmeticException.class, () -> suma.sumaAcumulada(Double.MAX_VALUE +1));
     }
 }
