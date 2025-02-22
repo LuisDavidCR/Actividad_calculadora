@@ -6,6 +6,7 @@ import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
 import static aplicaciones.Producto;
 import static aplicaciones.Division;
+import aplicaciones.Resta;
 
 /** Clase Main donde se gestiona el menu de la calculadora
  * @author Luis Calzadilla / @LuisDavidCR
@@ -28,13 +29,14 @@ public class Main {
                     menuSuma();
                     break;
                 case 2:
-                    System.out.println("Metodo Resta");
+                    Resta resta = new Resta();
+                    resta.menuResta();
                     break;
                 case 3:
                     menu_producto();
                     break;
                 case 4:
-                    menu_division();
+                    menu_division()ñ
                     break;
             }
 
