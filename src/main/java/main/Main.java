@@ -4,8 +4,8 @@ package main;
 import aplicaciones.ScannerGlobal;
 import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
-import static aplicaciones.Producto;
-import static aplicaciones.Division;
+import aplicaciones.Producto;
+import aplicaciones.Division;
 
 /** Clase Main donde se gestiona el menu de la calculadora
  * @author Luis Calzadilla / @LuisDavidCR
