@@ -6,6 +6,7 @@ import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
 import static aplicaciones.Producto.menu_producto;
 import static aplicaciones.Division.menu_division;
+import aplicaciones.Resta;
 
 /** Clase Main donde se gestiona el menu de la calculadora
  * @author Luis Calzadilla / @LuisDavidCR
@@ -37,7 +38,6 @@ public class Main {
                     menu_division();
                     break;
             }
-
 
         }while(opcion != 5);
 
