@@ -42,10 +42,12 @@ public class MenuSuma {
                     }
                     break;
                 case 4:
-                    System.out.println
-                            ("Introduce el valor a sumar, si ingresas el numero cero el acumulado se reinicia");
-                    sumaAcumulada(ingresaReal());
-                    System.out.println("La suma acumulada es: " + getAcumulador());
+                    try {
+                        sumaAcumulada(ingresaReal());
+                        System.out.println("La suma acumulada es: " + getAcumulador());
+                    }catch (ArithmeticException e) {
+                        System.out.println(e.getMessage());
+                    }
             }
 
 
