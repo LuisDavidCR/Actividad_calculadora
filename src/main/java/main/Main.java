@@ -4,8 +4,10 @@ package main;
 import aplicaciones.ScannerGlobal;
 import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
-
+import static aplicaciones.Producto;
+import static aplicaciones.Division;
 import aplicaciones.Resta;
+
 /** Clase Main donde se gestiona el menu de la calculadora
  * @author Luis Calzadilla / @LuisDavidCR
  * @version 0.1
@@ -31,10 +33,10 @@ public class Main {
                     resta.menuResta();
                     break;
                 case 3:
-                    System.out.println("Metodo Producto");
+                    menu_producto();
                     break;
                 case 4:
-                    System.out.println("Metodo División");
+                    menu_division()ñ
                     break;
             }
 
