@@ -1,4 +1,4 @@
-package Class;
+package aplicaciones;
 
 import java.util.Scanner;
 
@@ -10,9 +10,9 @@ public class Division {
      * @return Void porque los resultados de las operaciones lo devuelve cada operación.
      */
 
-    public void menu_division() {
+    public static void menu_division() {
         Scanner sc = new Scanner(System.in);
-        char indice=" ";
+        char indice;
         do {
             System.out.println("Elige el tipo de division que quieres realizar: ");
             System.out.println("Para operacion de 2 reales pulse 'R'");
@@ -29,36 +29,36 @@ public class Division {
                     float num1 = sc.nextFloat();
                     System.out.println("Introduzca el segundo numero: ");
                     float num2 = sc.nextFloat();
-                    while (num2==0f){
+                    while (num2==0f) {
                         System.out.println("Introduzca el segundo numero: ");
                         num2 = sc.nextFloat();
                     }
-                    reales(num1, num2);
+                    System.out.println("El resultado es: " + reales(num1, num2));
                     break;
                 case 'N':
                     System.out.println("Introduzca el primer numero: ");
-                    int num1 = sc.nextInt();
+                    int num3 = sc.nextInt();
                     System.out.println("Introduzca el segundo numero: ");
-                    int num2 = sc.nextInt();
-                    while (num2==0){
+                    int num4 = sc.nextInt();
+                    while (num4 ==0){
                         System.out.println("Introduzca el segundo numero: ");
-                        num2 = sc.nextInt();
+                        num4 = sc.nextInt();
                     }
-                    enteros(num1, num2);
+                    System.out.println("El resultado es: " + enteros(num3, num4));
                     break;
                 case 'I':
                     System.out.println("Introduzca el segundo numero: ");
-                    float num1 = sc.nextFloat();
-                    while (num1==0f){
+                    float num5 = sc.nextFloat();
+                    while (num5 ==0f){
                         System.out.println("Introduzca el segundo numero: ");
-                        num1 = sc.nextFloat();
+                        num5 = sc.nextFloat();
                     }
-                    inverso(num1);
+                    System.out.println("El resultado es: " + inverso(num5));
                     break;
                 case 'C':
                     System.out.println("Introduzca el segundo numero: ");
-                    int num1 = sc.nextFloat();
-                    raiz(num1);
+                    int num6 = sc.nextInt();
+                    System.out.println("El resultado es: "+ raiz(num6));
                     break;
                 default:
                     System.out.println("Entrada incorrecta");
@@ -75,7 +75,7 @@ public class Division {
      * @return float de dividir num1 y num2
      */
 
-    public float reales(float num1, float num2) {
+    static float reales(float num1, float num2) {
         return num1 / num2;
     }
 
@@ -87,7 +87,7 @@ public class Division {
      * @return int de dividir num1 y num2
      */
 
-    public int enteros(int num1, int num2) {
+    static int enteros(int num1, int num2) {
         return num1 / num2;
     }
 
@@ -98,7 +98,7 @@ public class Division {
      * @return float de invertir num1
      */
 
-    public float inverso(float num1) {
+    static float inverso(float num1) {
         return 1/num1;
     }
 
@@ -109,7 +109,7 @@ public class Division {
      * @return double que devuelve el resultado de la raiz cuadrada
      */
 
-    public double raiz(int rc) {
+    static double raiz(int rc) {
         return Math.sqrt(rc);
     }
 }

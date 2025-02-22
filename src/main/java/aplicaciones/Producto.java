@@ -1,8 +1,9 @@
-package Class;
+package aplicaciones;
 
 import java.util.Scanner;
 
 public class Producto {
+
 
     /**
      * Clase que sirve para seleccionar el tipo de producto que se va a realizar.
@@ -10,9 +11,9 @@ public class Producto {
      * @return Void porque los resultados de las operaciones lo devuelve cada operación.
      */
 
-    public void menu_producto() {
+    public static void menu_producto() {
         Scanner sc = new Scanner(System.in);
-        char indice=' ';
+        char indice;
         do {
             System.out.println("Elige el tipo de producto que quieres realizar: ");
             System.out.println("Para operacion de 2 reales pulse 'R'");
@@ -29,30 +30,30 @@ public class Producto {
                     float num1 = sc.nextFloat();
                     System.out.println("Inserte el segundo numero: ");
                     float num2 = sc.nextFloat();
-                    reales(num1, num2);
+                    System.out.println("El resultado es: " + reales(num1, num2));
                     break;
                 case 'N':
                     System.out.println("Inserte el primer numero: ");
-                    int num1 = sc.nextInt();
+                    int num3 = sc.nextInt();
                     System.out.println("Inserte el segundo numero: ");
-                    int num2 = sc.nextInt();
-                    enteros(num1, num2);
+                    int num4 = sc.nextInt();
+                    System.out.println("El resultado es: " + enteros(num3, num4));
                     break;
                 case 'T':
                     System.out.println("Inserte el primer numero: ");
-                    float num1 = sc.nextFloat();
+                    float num5 = sc.nextFloat();
                     System.out.println("Inserte el segundo numero: ");
-                    float num2 = sc.nextFloat();
+                    float num6 = sc.nextFloat();
                     System.out.println("Inserte el tercer numero: ");
-                    float num3 = sc.nextFloat();
-                    tres_reales(num1, num2, num3);
+                    float num7 = sc.nextFloat();
+                    System.out.println("El resultado es: " + tres_reales(num5, num6, num7));
                     break;
                 case 'E':
                     System.out.println("Inserte la base: ");
                     double base = sc.nextDouble();
                     System.out.println("Inserte el exponente: ");
                     double exponente = sc.nextDouble();
-                    Exponente(base, exponente);
+                    System.out.println("El resultado es: " + exponente(base, exponente));
                     break;
                 default:
                     System.out.println("Entrada incorrecta");
@@ -69,7 +70,7 @@ public class Producto {
      * @return float de multiplicar num1 y num2
      */
 
-    public float reales(float num1, float num2) {
+    static float reales(float num1, float num2) {
         return num1 * num2;
     }
 
@@ -81,7 +82,7 @@ public class Producto {
      * @return int de multiplicar num1 y num2
      */
 
-    public int enteros(int num1, int num2) {
+    static int enteros(int num1, int num2) {
         return num1 * num2;
     }
 
@@ -94,7 +95,7 @@ public class Producto {
      * @return float de multiplicar num1, num2 y num3
      */
 
-    public float tres_reales(float num1, float num2, float num3) {
+    static float tres_reales(float num1, float num2, float num3) {
         return num1 * num2 * num3;
     }
 
@@ -106,7 +107,7 @@ public class Producto {
      * @return double que devuelve el resultado de multiplicar exponent-veces la base
      */
 
-    public double exponente(double base, double exponent) {
+    static double exponente(double base, double exponent) {
         return Math.pow(base, exponent);
     }
 }
