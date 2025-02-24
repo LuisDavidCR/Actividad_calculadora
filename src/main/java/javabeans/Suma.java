@@ -74,8 +74,9 @@ public class Suma {
     }
 
     /**
-     * Suma el valor recivido a la variable acumulador
+     * Suma el valor recivido a la variable acumulador.
      * @param a valor que se a sumar al acumulador.
+     * @throws ArithmeticException si la cantidad supera el rango Double.
      * @return acumulador =+ a. se guarda en la varialble.
      */
     public static double sumaAcumulada(double a) {
