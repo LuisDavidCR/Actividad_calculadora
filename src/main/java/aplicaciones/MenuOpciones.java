@@ -3,17 +3,18 @@ package aplicaciones;
 
 import static aplicaciones.ValidarEntradas.ingresaOpcion;
 
-/** Clase para mostrar el menu en consola
+/** Imprime el menu principal en consola.
  * @author Luis Calzadilla / @LuisDavidCR
  * @version 0.1
  */
 
 public class MenuOpciones {
 
-    /** Método para gestinar el Menu Principal
-     * @param opcion - tipo int, inicia a 0.
-     * @return opcion --  valor recivido.
+    /** Muestra el menu y las opciones a escoger.
+     * @see ValidarEntradas
+     * @return opcion --  devuelve la opcion escogida.
      */
+
     public static int pintarMenu() {
         int opcion = 0;
 

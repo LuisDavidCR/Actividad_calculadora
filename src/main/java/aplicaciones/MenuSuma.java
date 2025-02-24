@@ -4,13 +4,17 @@ import static aplicaciones.ValidarEntradas.*;
 import static javabeans.Suma.*;
 
 /**
- * Clase menu suma
+ * Muestra el menu suma
  * @author Luis Calzadilla / @LuisDavidCR
  * @see javabeans.Suma
  */
 
 public class MenuSuma {
 
+    /**
+     * Ejecuta la opcion en el menu elijida y muestra el resulta.
+     * captura excepciones si las hubiese.
+     */
     public static void menuSuma() {
         int opcion;
 
@@ -57,6 +61,11 @@ public class MenuSuma {
 
 
     }
+
+    /**
+     * Imprime en la consola las opciones a elegir.
+     * @return opcion , devuelve la opcion elegida.
+     */
     public static int pintarMenu() {
         int opcion = 0;
 
