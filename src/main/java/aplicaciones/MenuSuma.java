@@ -12,7 +12,7 @@ import static javabeans.Suma.*;
 public class MenuSuma {
 
     /**
-     * Ejecuta la opcion en el menu elijida y muestra el resulta.
+     * Ejecuta la opcion en el menu elejida y muestra el resulta.
      * captura excepciones si las hubiese.
      */
     public static void menuSuma() {
