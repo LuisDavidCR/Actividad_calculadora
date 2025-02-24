@@ -3,9 +3,9 @@ package javabeans;
 import static java.lang.Integer.*;
 
 /**
- * Clase que proporciona operaciones matemáticas básicas.
- *  * @author Luis Calzadilla / @LuisDavidCR
- *  * @version 0.1
+ * Proporciona las operaciones de suma todos sus metodos son estaticos.
+ * @author Luis Calzadilla / @LuisDavidCR
+ * @version 0.1
  * @param acumulador -- guarda  valor acumulado.
  */
 
@@ -19,10 +19,9 @@ public class Suma {
 
 
     /**
-     * Realiza la suma de dos n&uacute;meros enteros.
-     *
-     * @param a Primer n&uacute;mero entero.
-     * @param b Segundo n&uacute;mero entero.
+     * Realiza la suma de dos numeros enteros.
+     * @param a Primer numero entero.
+     * @param b Segundo numero entero.
      * @throws ArithmeticException si la cantidad supera el rango int.
      * @return La suma de a y b.
      */
@@ -34,26 +33,24 @@ public class Suma {
     }
 
     /**
-     * Realiza la suma de dos números decimales (reales).
-     *
-     * @param a Primer número decimal.
-     * @param b Segundo número decimal.
+     * Realiza la suma de dos números reales.
+     * @param a Primer número real.
+     * @param b Segundo número real.
      * @throws ArithmeticException si la cantidad supera el rango Double.
      * @return La suma de a y b.
      */
 
     public static double sumarDosReales(double a, double b) {
         if ((a > 0 && b > Double.MAX_VALUE - a) || (a < 0 && b < -Double.MAX_VALUE -a ))
-            throw new ArithmeticException("Supera el valor maximo o minimo admito");
+            throw new ArithmeticException("Supera el valor maximo o minimo admitido");
         return a + b;
     }
 
     /**
-     * Realiza la suma de dos números decimales (reales).
-     *
-     * @param a Primer número decimal.
-     * @param b Segundo número decimal.
-     * @param c Tercer número decinal.
+     * Realiza la suma de tres números reales.
+     * @param a Primer número real.
+     * @param b Segundo número real
+     * @param c Tercer número real.
      * @throws ArithmeticException si la cantidad supera el rango Double.
      * @return La suma de a y b.
      */
@@ -61,11 +58,11 @@ public class Suma {
     public static double sumarTresReales(double a, double b, double c) {
         //verificar primero si supera el limite en a + b.
         if ((a > 0 && b > Double.MAX_VALUE - a) || (a < 0 && b < -Double.MAX_VALUE -a))
-            throw new ArithmeticException("Supera el valor maximo o minimo admito");
+            throw new ArithmeticException("Supera el valor maximo o minimo admitido");
         double suma1 = a +b;
         //verificar ahora suma1 + c.
         if ((c > 0 && suma1 > Double.MAX_VALUE - c) || (c < 0 && suma1 < -Double.MAX_VALUE -c))
-            throw new ArithmeticException("Supera el valor maximo o minimo admito");
+            throw new ArithmeticException("Supera el valor maximo o minimo admitido");
         return suma1 + c;
     }
 
@@ -78,14 +75,14 @@ public class Suma {
 
     /**
      * Suma el valor recivido a la variable acumulador
-     * @param a valor a sumar.
-     * @return acumulador =+ a.
+     * @param a valor que se a sumar al acumulador.
+     * @return acumulador =+ a. se guarda en la varialble.
      */
     public static double sumaAcumulada(double a) {
         if (acumulador == 0)
             return acumulador = a;
         if ((a > 0 && acumulador > Double.MAX_VALUE - a) || (a < 0 && acumulador < -Double.MAX_VALUE -a))
-            throw new ArithmeticException("Supera el valor maximo o minimo admito");
+            throw new ArithmeticException("Supera el valor maximo o minimo admitido");
         return acumulador = acumulador + a;
     }
 
