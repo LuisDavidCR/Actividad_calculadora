@@ -3,17 +3,16 @@ package aplicaciones;
 import java.util.InputMismatchException;
 
 /**
- * Clase para validar los datos de entrada con errores
+ * Valida los datos de entrada.
  * @author Luis Calzadilla / @LuisDavidCR
  */
 
 public class ValidarEntradas {
 
     /**
-     * @param numero entero inicia en 0.
-     * @param entradaValida boolean control de ciclo para validar el dato.
+     * Valida el ingreso de un numero entero.
      * @throws ArithmeticException si el dato es invalido.
-     * @return numero valor aceptado.
+     * @return numero -- devuelve el valor aceptado.
      */
 
     public static int ingresaEntero() {
@@ -35,10 +34,9 @@ public class ValidarEntradas {
     }
 
     /**
-     * @param numero real inicia en 0.
-     * @param entradaValida boolean control de ciclo para validar el dato.
+     * Valida el ingreso de un numero real.
      * @throws ArithmeticException si el dato es invalido.
-     * @return numero valor aceptado.
+     * @return numero -- devuelve el valor aceptado.
      */
 
     public static double ingresaReal() {
@@ -60,8 +58,8 @@ public class ValidarEntradas {
     }
 
     /**
-     * @param opcion entero inicia en 0.
-     * @return opcion valor aceptado.
+     * Valida la opcion escogida.
+     * @return opcion -- devuelve la opcion aceptada.
      */
 
     public static int ingresaOpcion() {
