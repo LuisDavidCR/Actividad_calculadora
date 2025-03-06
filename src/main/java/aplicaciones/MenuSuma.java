@@ -5,7 +5,7 @@ import static javabeans.Suma.*;
 
 /**
  * Muestra el menu suma
- * @author Luis Calzadilla / @LuisDavidCR
+ * @author Luis Calzadilla Romero
  * @see javabeans.Suma
  */
 

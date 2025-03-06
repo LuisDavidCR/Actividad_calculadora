@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 
 /**
  * Valida los datos de entrada.
- * @author Luis Calzadilla / @LuisDavidCR
+ * @author Luis Calzadilla Romero
  */
 
 public class ValidarEntradas {

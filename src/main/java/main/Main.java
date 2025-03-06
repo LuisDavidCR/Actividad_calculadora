@@ -6,7 +6,7 @@ import static aplicaciones.MenuOpciones.pintarMenu;
 import static aplicaciones.MenuSuma.menuSuma;
 
 /** Clase Main donde se gestiona el menu de la calculadora
- * @author Luis Calzadilla / @LuisDavidCR
+ * @author Luis Calzadilla Romero
  * @version 0.1
  * @see aplicaciones.MenuOpciones
  * @see aplicaciones.ScannerGlobal

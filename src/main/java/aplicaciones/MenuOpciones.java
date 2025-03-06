@@ -4,7 +4,7 @@ package aplicaciones;
 import static aplicaciones.ValidarEntradas.ingresaOpcion;
 
 /** Imprime el menu principal en consola.
- * @author Luis Calzadilla / @LuisDavidCR
+ * @author Luis Calzadilla Romero
  * @version 0.1
  */
 

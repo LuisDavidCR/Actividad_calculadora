@@ -4,13 +4,14 @@ import static java.lang.Integer.*;
 
 /**
  * Proporciona las operaciones de suma todos sus metodos son estaticos.
- * @author Luis Calzadilla / @LuisDavidCR
+ * @author Luis Calzadilla Romero
  * @version 0.1
- * @param acumulador -- guarda  valor acumulado.
  */
 
 public class Suma {
-
+    /**
+     * Atributo de clase para acumular valor en determinada operacion.
+     */
     private static double acumulador;
 
     public static double getAcumulador() {
